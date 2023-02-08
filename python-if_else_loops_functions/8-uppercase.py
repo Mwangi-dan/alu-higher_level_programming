@@ -8,5 +8,5 @@ def uppercase(str):
             ntxt = chr(ch)
         else:
             ntxt = i
-        print("{:s}".format(ntxt), end ="")
+        print("{:s}".format(ntxt), end="")
     print("")
