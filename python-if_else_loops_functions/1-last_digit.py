@@ -11,6 +11,6 @@ x = last_digit(number)
 if x > 5:
     print("Last digit of {:d} is {:d} and is greater than 5".format(number, x))
 elif x == 0:
-    print(f"Last digit of {:d} is {:d} and is 0".format(number, x))
+    print("Last digit of {:d} is {:d} and is 0".format(number, x))
 elif x < 6 and (x != 0):
-    print(f"Last digit of {:d} is {:d} and is less than 6 and not 0".format(number, x))
+    print("Last digit of {:d} is {:d} and is less than 6 and not 0".format(number, x))
