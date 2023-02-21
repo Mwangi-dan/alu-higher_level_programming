@@ -1,13 +1,7 @@
 #!/usr/bin/python3
 # script to import calculation functions and do operations on numbers
-
+from calculator_1 import add, sub, mul, div
 if __name__ == "__main__":
-    import calculator_1 as calc
-    # assigning shorter names to the imported functions
-    add = calc.add
-    sub = calc.sub
-    mul = calc.mul
-    div = calc.div
     # initializing variables
     a = 10
     b = 5
