@@ -1,1 +1,1 @@
-This repo contain python code that I am learning with
+This folder contains code on importing modules and functions in python
