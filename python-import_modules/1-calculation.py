@@ -2,12 +2,12 @@
 # script to import calculation functions and do operations on numbers
 
 if __name__ == "__main__":
-    import calculator_1
+    import calculator_1 as calc
     # assigning shorter names to the imported functions
-    add = calculator_1.add
-    sub = calculator_1.sub
-    mul = calculator_1.mul
-    div = calculator_1.div
+    add = calc.add
+    sub = calc.sub
+    mul = calc.mul
+    div = calc.div
     # initializing variables
     a = 10
     b = 5
