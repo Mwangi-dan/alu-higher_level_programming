@@ -5,7 +5,6 @@ if __name__ == "__main__":
     # initializing variables
     a = 10
     b = 5
-    # printing the operations
     print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))
     print("{:d} - {:d} = {:d}".format(a, b, sub(a, b)))
     print("{:d} * {:d} = {:d}".format(a, b, mul(a, b)))
