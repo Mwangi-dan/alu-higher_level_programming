@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # Calculator with function from inported module
 import sys
-from calculator_1 import add, sub, mul, div
+import calculator_1
 
 if __name__ == "__main__":
     a = len(sys.argv) - 1
@@ -13,6 +13,11 @@ if __name__ == "__main__":
     if op != '+' and op != '-' and op != '*' and op != '/':
         print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
+    
+    add = calc.add
+    sub = calc.sub
+    div = calc.div
+    mul = calc.mul
 
     num_1 = int(sys.argv[1])
     num_2 = int(sys.argv[3])
