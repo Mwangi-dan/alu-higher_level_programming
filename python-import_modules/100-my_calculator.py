@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # Calculator with function from inported module
 import sys
-import calculator_1 as calc
+from calculator_1 import add, sub, mul, div
 
 if __name__ == "__main__":
     a = len(sys.argv) - 1
@@ -18,14 +18,14 @@ if __name__ == "__main__":
     num_2 = int(sys.argv[3])
 
     if op == "+":
-        print(f"{num_1} + {num_2} = {calc.add(num_1, num_2)}")
+        print(f"{num_1} + {num_2} = {add(num_1, num_2)}")
         sys.exit(0)
     elif op == "-":
-        print(f"{num_1} - {num_2} = {calc.sub(num_1, num_2)}")
+        print(f"{num_1} - {num_2} = {sub(num_1, num_2)}")
         sys.exit(0)
     elif op == "*":
-        print(f"{num_1} * {num_2} = {calc.mul(num_1, num_2)}")
+        print(f"{num_1} * {num_2} = {mul(num_1, num_2)}")
         sys.exit(0)
     else:
-        print(f"{num_1} / {num_2} = {calc.div(num_1, num_2)}")
+        print(f"{num_1} / {num_2} = {div(num_1, num_2)}")
         sys.exit(0)
