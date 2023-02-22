@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 # Calculator with function from inported module
 import sys
-import calculator_1
 
 if __name__ == "__main__":
+    import calculator_1
     a = len(sys.argv) - 1
     if a != 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
