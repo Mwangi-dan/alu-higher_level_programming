@@ -4,10 +4,9 @@
 
 def print_matrix_integer(matrix=[[]]):
     for row in matrix:
-        if row != len(matrix):
-            for j in range(len(row)):
-                if j == len(row):
-                    print("{:d}".format(row[j]), end="\n")
-                else:
-                    print("{:d}".format(row[j]), end=" ")
+        for col in range(len(row)):
+            if col < len(row) - 1:
+                print("{:d}".format(row[col]), end=' ')
+            else:
+                print("{:d}".format(row[col]), end='\n')
         print()
