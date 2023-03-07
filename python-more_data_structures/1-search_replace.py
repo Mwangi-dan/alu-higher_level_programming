@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/python3
 # function that replaces all occurrences of an element in new list
 
 def search_replace(my_list, search, replace):
