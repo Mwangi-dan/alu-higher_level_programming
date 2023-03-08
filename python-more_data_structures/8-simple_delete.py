@@ -2,4 +2,5 @@
 
 
 def simple_delete(a_dictionary, key=""):
-    return a_dictionary.pop(key) if key not in a_dictionary else a_dictionary
+    a_dictionary.pop(key, None)
+    return a_dictionary
