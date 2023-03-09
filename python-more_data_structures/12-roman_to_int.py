@@ -11,5 +11,5 @@ def roman_to_int(roman_string):
                 res += val[roman_string[i]]
             else:
                 res -= val[roman_string[i]]
-        pre = val[roman_string[i]]
+            pre = val[roman_string[i]]
     return res
