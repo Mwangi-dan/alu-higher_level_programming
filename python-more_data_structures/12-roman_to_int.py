@@ -7,9 +7,9 @@ def roman_to_int(roman_string):
     res = 0
 
     for i in range(len(roman_string) - 1, -1, -1):
-        if val[roman_string[i]] < p:
+        if val[roman_string[i]] < pre:
             res += val[roman_string[i]]
         else:
             res -= val[roman_string[i]]
-        prev = val[roman_string[i]]
+        pre = val[roman_string[i]]
     print(res)
