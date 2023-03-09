@@ -12,4 +12,4 @@ def roman_to_int(roman_string):
             else:
                 res -= val[roman_string[i]]
         pre = val[roman_string[i]]
-    print(res)
+    return res
