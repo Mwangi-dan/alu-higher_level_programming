@@ -3,6 +3,7 @@
 
 """
 
+
 class Square:
     """Square Class
 
@@ -12,7 +13,7 @@ class Square:
 
     def __init__(self, size=0):
         """__init__
-        
+
         The __init__ methid initialies the size value of the square.
 
         Attributes:
@@ -21,11 +22,9 @@ class Square:
         Raises:
             TypeError: If `size` type is not `int`
         """
-    
         if type(size) is not int:
             raise TypeError("size must be an integer")
 
         if size < 0:
             raise ValueError("size must be >= 0")
-        
         self.__size = size
