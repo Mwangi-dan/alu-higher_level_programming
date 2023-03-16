@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-"""Module for class Square
-
-"""
 
 
 class Square:
@@ -14,7 +11,7 @@ class Square:
     def __init__(self, size=0):
         """__init__
 
-        The __init__ methid initialies the size value of the square.
+        The __init__ method initialies the size value of the square.
 
         Attributes:
             size (:obj:`int`, optional): The size of the square.
