@@ -44,6 +44,7 @@ def add_queen(board, row, col):
     """
     board[row][col] = 1
 
+    
 def coordinate_format(candidates):
     """converts a board (matrix 1 of 0) into a series of row/column indices of each queen
 
