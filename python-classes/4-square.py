@@ -40,12 +40,12 @@ class Square:
     def __get_size(self):
         """
         Retrieves the size
-        
+
         """
         return self.__size
 
     @size.setter
-    def __set_x(self, size):
+    def __set_size(self, size):
         """
         Sets the value of size
 
