@@ -49,6 +49,7 @@ class Rectangle():
         Raises:
             TypeError: if value os not integer
             ValueError: If value is less than 0
+
         """
         if type(value) is not int:
             raise TypeError("width must be an integer")
@@ -77,6 +78,7 @@ class Rectangle():
         Raises:
             TypeError: if value os not integer
             ValueError: If value is less than 0
+
         """
         if type(value) is not int:
             raise TypeError("height must be an integer")
@@ -87,12 +89,14 @@ class Rectangle():
     def area(self):
         """Returns:
             Area of rectangle
+
         """
         return self.__width * self.__height
 
     def perimeter(self):
         """Returns:
             Perimeter of rectangle
+
         """
         if self.__width == 0 or self.__height == 0:
             return 0
