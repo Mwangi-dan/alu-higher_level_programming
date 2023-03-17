@@ -135,9 +135,10 @@ class Rectangle():
         """
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
 
-    @staticmethod
+    @clsmethod
     def __del__():
         """printts message upon deletion of rectangle
 
         """
+        cls.number_of_instances -= 1
         print("Bye rectangle...")
