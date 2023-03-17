@@ -5,6 +5,6 @@
 
 
 class Rectangle():
-	"""Rectangle class
+    """Simple Rectangle class
 
-	"""
+    """
