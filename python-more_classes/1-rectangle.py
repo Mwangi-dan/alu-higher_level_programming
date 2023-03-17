@@ -6,7 +6,7 @@
 
 class Rectangle():
     """Simple Rectangle class
-    
+
     Attributes:
         __width (int): width of rectangle
         __height (int): height of rectangle
@@ -50,7 +50,7 @@ class Rectangle():
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
-        self.__value = value
+        self.__height = value
 
     @property
     def height(self):
@@ -78,4 +78,4 @@ class Rectangle():
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
-        self.__value = value
+        self.__height = value
