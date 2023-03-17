@@ -136,8 +136,8 @@ class Rectangle():
         """
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
 
-    @clsmethod
-    def __del__():
+    @classmethod
+    def __del__(cls):
         """printts message upon deletion of rectangle
 
         """
