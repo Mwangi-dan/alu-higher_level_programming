@@ -43,7 +43,40 @@ def add_queen(board, row, col):
 
     """
     board[row][col] = 1
+    
+    
+def new_queen_safe(board, row, col):
+    """For the board given, checks that for a new queen placed in the rightmost
+    column, there are no other "queen"s, or 1 values, in the martix to the
+    left, and diagonally up-left and down-left.
+    Args:
+        board (list) of (list) of (int): 2D list of ints, only as wide as
+            needed to test the rightmost column for queen conflicts.
+        row (int): first dimension index
+        col (int): second dimension index
+    Returns:
+        True if no left side conflicts found for new queen, or False if a
+    conflict is found.
+    """
+    x = row
+    y = col
 
+    for i in range(1, N):
+        if (y - i) >= 0:
+            # check up-left diagonal
+            if (x - i) >= 0:
+                if board[x - i][y - i]:
+                    return False
+            # check left
+            if board[x][y - i]:
+                return False
+            # check down-left diagonal
+            if (x + i) < N:
+                if board[x + i][y - i]:
+                    return False
+    return True    
+
+    
 def coordinate_format(candidates):
     """converts a board (matrix 1 of 0) into a series of row/column indices of each queen
 
