@@ -6,6 +6,8 @@ Argvs:
 Returns:
     List of available attributes and methods of an object
 """
+
+
 def lookup(obj):
     """
     Lookup function
