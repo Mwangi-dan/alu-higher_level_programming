@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+Imports classes from Rectangle and BaseGeometry
+
+"""
 Rectangle = __import__('9-rectangle.py').Rectangle
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
