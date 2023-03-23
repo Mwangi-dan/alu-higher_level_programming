@@ -1,23 +1,22 @@
 #!/usr/bin/python3
+
 """
-Imports classes from Rectangle and BaseGeometry
+Square class that inherits rectangle
+and BaseGeometry
+
+Args:
+    Square (class): Class for square
 
 """
 Rectangle = __import__('9-rectangle.py').Rectangle
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
-"""
-Square class that inherits from rectangle
-and BaseGeometry
-
-Args:
-    Square (class): Class for square derived from rectangle
-
-"""
 
 class Square(Rectangle):
-    """Square class that inherits rectangle
+    """Square class that inherits rectangle class
 
+    Args:
+        Rectangle (class)
     """
     def __init__(self, size):
         """
@@ -34,6 +33,8 @@ class Square(Rectangle):
     def area(self):
         """
         Finds area of square
+
+        """
 
         Args:
             size (int)
