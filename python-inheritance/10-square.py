@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+Rectangle = __import__('9-rectangle.py').Rectangle
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
 """
 Square class that inherits from rectangle
 and BaseGeometry
@@ -7,10 +10,6 @@ Args:
     Square (class): Class for square derived from rectangle
 
 """
-
-Rectangle = __import__('9-rectangle.py').Rectangle
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
-
 
 class Square(Rectangle):
     """Square class that inherits rectangle
