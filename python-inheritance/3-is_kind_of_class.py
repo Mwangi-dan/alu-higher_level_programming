@@ -1,5 +1,8 @@
 #!/usr/bin/python3
+'''
+Module to check if objects are from specified class
 
+'''
 
 def is_kind_of_class(obj, a_class):
     """
