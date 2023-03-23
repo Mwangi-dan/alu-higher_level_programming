@@ -8,7 +8,7 @@ import json
 def save_to_json_file(my_obj, filename):
     """
     Args:
-        my_obj 
+        my_obj
         filename (string): name of file
     """
     with open(filename, 'w', encoding='utf8') as f:
