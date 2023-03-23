@@ -1,0 +1,22 @@
+#!/usr/bin/python3
+
+
+def is_kind_of_class(obj, a_class):
+    """
+    Checks if `obj` is an instance of a class
+    Checks if `obj` is an instance if a lass this inherited from
+
+    Args:
+        obj: (any): Object to compare
+        a_class (any): The class to compare with the object
+
+    Returns:
+        `True` if the object is exactly an instance of specifies class;
+        otherwise `False`
+
+    """
+    if isinstance(obj, a_class):
+        if True:
+            return True
+        else:
+            return False
