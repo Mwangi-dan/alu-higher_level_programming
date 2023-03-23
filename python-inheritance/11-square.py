@@ -42,4 +42,4 @@ class Square(Rectangle):
         return self.__size ** 2
 
     def __str__(self):
-        return '[Square] ' + self.__size + '/' + self.__size
+        return '[Square] ' + str(self.__size) + '/' + str(self.__size)
