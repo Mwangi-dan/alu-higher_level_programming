@@ -4,6 +4,7 @@ Module to check if objects are from specified class
 
 '''
 
+
 def is_kind_of_class(obj, a_class):
     """
     Checks if `obj` is an instance of a class
@@ -18,8 +19,4 @@ def is_kind_of_class(obj, a_class):
         otherwise `False`
 
     """
-    if isinstance(obj, a_class):
-        if True:
-            return True
-        else:
-            return False
+    return isinstance(obj, a_class)
