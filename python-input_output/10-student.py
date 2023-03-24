@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Module with class student
+Module that defines the class student
+
 """
 
 
