@@ -8,12 +8,12 @@ def append_after(filename="", search_string="", new_string=''):
     """ Function that inserts a line of text to a file
      after each line containing a specific dtring
      """
-    with open(filename, r+, encoding="utf8") as f:
+    with open(filename, 'r+', encoding="utf8") as f:
         all_text = f.readlines()
         new_text = ""
         for line in all_text:
             new_text += line
-            if search_string inline:
+            if search_string in line:
                 new_text += new_string
 
         f.seek(0)
