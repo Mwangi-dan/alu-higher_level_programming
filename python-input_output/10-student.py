@@ -32,7 +32,7 @@ class Student:
 
             for iatr in range(len(attrs)):
                 for satr in obj:
-                    if attrs[iatr] = satr:
+                    if attrs[iatr] == satr:
                         res[satr] = obj[satr]
             return res
         return obj
