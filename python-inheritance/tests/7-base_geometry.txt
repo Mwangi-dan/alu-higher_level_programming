@@ -1,5 +1,5 @@
-
-w to use 7-base_geometry.py  
+==========================
+  How to use 7-base_geometry.py  
 ==========================
 
 ``7-base_geometry`` class BaseGeometry
@@ -40,11 +40,6 @@ Tester of Method Area
 	...	print("[{}] {}".format(e.__class__.__name__, e))
 	...
 	[Exception] area() is not implemented
-
-Tester of Method Integer Validator
-==================================
-
-``Integer_validator`` checks if type(value) is an integer, otherwhise will raise an error
 
 Tester with integer cases:
 
