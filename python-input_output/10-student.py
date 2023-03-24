@@ -34,3 +34,4 @@ class Student:
                     if attrs[iatr] = satr:
                         res[satr] = obj[satr]
             return res
+        return obj
