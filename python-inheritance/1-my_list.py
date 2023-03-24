@@ -13,7 +13,7 @@ class MyList(list):
     def print_sorted(self):
         """
         Prints a list in ascending order
-      
+
         Sorts list then prints it
         """
         if issubclass(MyList, list):
