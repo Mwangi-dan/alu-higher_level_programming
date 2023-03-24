@@ -23,4 +23,4 @@ class Student:
         res = {}
         if hasattr(self, "__dict__"):
             res = self.__dict__.copy()
-        return res 
+        return res
