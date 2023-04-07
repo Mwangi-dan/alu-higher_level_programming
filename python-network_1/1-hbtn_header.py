@@ -13,5 +13,5 @@ if __name__ == "__main__":
     the value of the X-Request-Id variable found in the header
     of the response"""
     with urllib.request.urlopen(argv[1]) as response:
-        html_id = response.info().get('X-Request-Id')
+        html_id = response.get('X-Request-Id')
         print(html_id)
