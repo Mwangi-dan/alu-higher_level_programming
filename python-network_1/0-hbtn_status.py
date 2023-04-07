@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
-"""Fetch data
-Fetches data from `https://alu-intranet.hbtn.io/status`
+"""Fetch data from
+https://alu-intranet.hbtn.io/status`
 
 """
 
