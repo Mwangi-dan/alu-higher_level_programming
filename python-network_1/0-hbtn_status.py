@@ -1,9 +1,8 @@
 #!/usr/bin/python3
-"""Fetch data from
-https://alu-intranet.hbtn.io/status`
+"""
+Fetches data from https://alu-intranet.hbtn.io/status
 
 """
-
 import urllib.request
 
 url = "https://alu-intranet.hbtn.io/status"
