@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 import urllib
-"""
-Fetches `https://alu-intranet.hbtn.io/status`
+"""Fetch data
+	Fetches data from `https://alu-intranet.hbtn.io/status`
+
 """
 url = "https://alu-intranet.hbtn.io/status"
 with urllib.request.urlopen(url) as response:
