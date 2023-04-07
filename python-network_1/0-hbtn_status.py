@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""
+'''
 Fetches data from https://alu-intranet.hbtn.io/status
 
-"""
+'''
 import urllib.request
 
 url = "https://alu-intranet.hbtn.io/status"
