@@ -7,9 +7,7 @@ Using ``add_integer``
 This file is in restructured text format. It is used to generate the documentation for the ``add_integer`` function.
 first import ``add_integer`` from the ``0-add_integer`` module:
 
-.. code-block:: python
-
-    >>> from add_integer import add_integer
+    >>> add_integer = __import__('0-add_integer').add_integer
 
 
 Checking for function docstring
