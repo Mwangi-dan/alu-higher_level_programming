@@ -1,0 +1,74 @@
+The ``0-add_integer test`` module
+=================================
+
+Using ``add_integer``
+---------------------
+
+This file is in restructured text format. It is used to generate the documentation for the ``add_integer`` function.
+first import ``add_integer`` from the ``0-add_integer`` module:
+
+.. code-block:: python
+
+    >>> from add_integer import add_integer
+
+
+Checking for function docstring
+
+    >>> f = __import__('0-add_integer').add_integer.__doc__
+    >>> len(f) > 1
+    True
+
+Basic Usage
+
+.. code-block:: python
+
+    >>> add_integer(1, 2)
+    3
+
+You can also call with floats:
+
+.. code-block:: python
+
+    >>> add_integer(1.2, 2.3)
+    2
+
+You can also call with floats and integers:
+
+.. code-block:: python
+
+    >>> add_integer(1.2, 3)
+    4
+
+Checking positive with negative:
+
+    >>> add_integer(1, -2)
+    -1
+
+You can also call with strings:
+
+.. code-block:: python
+
+    >>> add_integer("Test", 2)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+Calling it with lists
+
+.. code-block:: python
+
+    >>> add_integer([1, 2], 3)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+
+Calling it with none
+
+.. code-block:: python
+
+    >>> add_integer(None, 3)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
