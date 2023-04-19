@@ -28,7 +28,7 @@ You can also call with floats:
 .. code-block:: python
 
     >>> add_integer(1.2, 2.3)
-    2
+    3
 
 You can also call with floats and integers:
 
