@@ -70,3 +70,8 @@ Calling it with none
     ...
     TypeError: a must be an integer
 
+Float NaN:
+    >>> add_integer(float('NaN))
+    Traceback (most recent call last):
+    ...
+    ValueError: cannot convert float NaN to integer
