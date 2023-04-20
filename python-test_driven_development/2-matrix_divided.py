@@ -26,7 +26,11 @@ def matrix_divided(matrix, div):
         raise TypeError("div must be a number")
     if div == 0:
         raise ZeroDivisionError("division by zero")
+    if len(matrix) == 0:
+        raise TypeError(error_msg)
     for row in matrix:
+        if len(row) == 0:
+            raise TypeError(error_msg)
         if not isinstance(row, list):
             raise TypeError(error_msg)
         if len(row) != len(matrix[0]):
