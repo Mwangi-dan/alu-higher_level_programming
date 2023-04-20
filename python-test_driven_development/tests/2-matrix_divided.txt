@@ -9,7 +9,7 @@
 [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
 
 error input
->>> noneL = none
+>>> noneL = None
 >>> empty_list = []
 >>> empty_lists = [[], []]
 >>> not_list = [42, [2, 5], [1, 2, 3]]
