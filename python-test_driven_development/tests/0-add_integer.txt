@@ -1,85 +1,37 @@
-The ``0-add_integer test`` module
-=================================
+>>> add_integer = __import__('0-add_integer').add_integer
 
-Using ``add_integer``
----------------------
-
-This file is in restructured text format. It is used to generate the documentation for the ``add_integer`` function.
-first import ``add_integer`` from the ``0-add_integer`` module:
-
-    >>> add_integer = __import__('0-add_integer').add_integer
-
-
-Checking for function docstring
-
-    >>> f = __import__('0-add_integer').add_integer.__doc__
-    >>> len(f) > 1
-    True
-
-Basic Usage
-
-.. code-block:: python
-
-    >>> add_integer(1, 2)
-    3
-
-You can also call with floats:
-
-.. code-block:: python
-
-    >>> add_integer(1.2, 2.3)
-    3
-
-You can also call with floats and integers:
-
-.. code-block:: python
-
-    >>> add_integer(1.2, 3)
-    4
-
-Checking positive with negative:
-
-    >>> add_integer(1, -2)
-    -1
-
-You can also call with strings:
-
-.. code-block:: python
-
-    >>> add_integer("Test", 2)
-    Traceback (most recent call last):
-    ...
-    TypeError: a must be an integer
-
-Calling it with lists
-
-.. code-block:: python
-
-    >>> add_integer([1, 2], 3)
-    Traceback (most recent call last):
-    ...
-    TypeError: a must be an integer
-
-
-Calling it with none
-
-.. code-block:: python
-
-    >>> add_integer(None, 3)
-    Traceback (most recent call last):
-    ...
-    TypeError: a must be an integer
-
-Float NaN:
-
-.. code-block:: python
-    >>> add_integer(float('NaN'))
-    Traceback (most recent call last):
-    ...
-    ValueError: cannot convert float NaN to integer
-
-Float overflow:
-
-.. code-block:: python
-    >>> add_integer(1500.5)
-    1598
+>>> add_integer(0, 0)
+0
+>>> add_integer(15, 0)
+15
+>>> add_integer(0, 15)
+15
+>>> add_integer(-2, 2)
+0
+>>> add_integer(2, -2)
+0
+>>> add_integer(2)
+100
+>>> add_integer()
+Traceback (most recent call last):
+TypeError: add_integer() missing 1 required positional argument: 'a'
+>>> add_integer('a', 'b')
+Traceback (most recent call last):
+TypeError: a must be an integer
+>>> add_integer('a', 42)
+Traceback (most recent call last):
+TypeError: a must be an integer
+>>> add_integer('a')
+Traceback (most recent call last):
+TypeError: a must be an integer
+>>> add_integer(42, 'b')
+Traceback (most recent call last):
+TypeError: b must be an integer
+>>> add_integer(float('inf'), 0)
+Traceback (most recent call last):
+...
+OverflowError: cannot convert float infinity to integer
+>>> add_integer(0, float('nan'))
+Traceback (most recent call last):
+...
+ValueError: cannot convert float NaN to integer
