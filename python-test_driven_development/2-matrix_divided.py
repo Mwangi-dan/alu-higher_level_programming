@@ -33,5 +33,5 @@ def matrix_divided(matrix, div):
             raise TypeError("Each row of the matrix must have the same size")
         for element in row:
             if not isinstance(element, (int, float)):
-                raise TypeError(error_msg)        
+                raise TypeError(error_msg)   
     return [[round(element / div, 2) for element in row] for row in matrix]
