@@ -14,13 +14,6 @@ def text_indentation(text):
     """
     if type(text) is not str:
         raise TypeError("text must be a string")
-    for i in range(len(text)):
-        if text[i] in [".", "?", ":"]:
-            print(text[i], end="\n\n")
-            print()
-        elif text[i] in [".", "?", ":"] and i == len(text) - 1:
-            print(text[i], end="")
-        elif text[i] == " " and text[i - 1] in [".", "?", ":"]:
-            continue
-        else:
-            print(text[i], end="")
+    for delimeter in "?:.":
+        words = (delimeter + "\n\n").join(
+                [index.strip(" ") for index in words.split(delimeter)])
