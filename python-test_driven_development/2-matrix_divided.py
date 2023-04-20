@@ -19,24 +19,24 @@ def matrix_divided(matrix, div):
 
     :return: new matrix (list of lists)
     """
-    error_msg = "matrix must be a matrix (list of lists) of integers/floats"
+    errorMessage = "matrix must be a matrix (list of lists) of integers/floats"
+    if not matrix:
+        raise TypeError(errorMessage)
     if not isinstance(matrix, list):
-        raise TypeError(error_msg)
-    if not isinstance(div, (int, float)):
+        raise TypeError(errorMessage)
+    for lists in matrix:
+        if not isinstance(lists, list):
+            raise TypeError(errorMessage)
+        for item in lists:
+            if not isinstance(item, int) and not isinstance(item, float):
+                raise TypeError(errorMessage)
+    for lists in matrix:
+        if len(lists) == 0:
+            raise TypeError(errorMessage)
+    if not isinstance(div, int) and not isinstance(div, float):
         raise TypeError("div must be a number")
+    if not all(len(lists) == len(matrix[0]) for lists in matrix):
+        raise TypeError("Each row of the matrix must have the same size")
     if div == 0:
         raise ZeroDivisionError("division by zero")
-    if len(matrix) == 0:
-        raise TypeError(error_msg)
-    for row in matrix:
-        if len(row) == 0:
-            raise TypeError(error_msg)
-        if not isinstance(row, list):
-            raise TypeError(error_msg)
-        if not all(len(row) == len(matrix[0])):
-            raise TypeError("Each row of the matrix must have the same size")
-        for element in row:
-            if not isinstance(element, (int, float)):
-                raise TypeError(error_msg)
-    
-    return [[round(element / div, 2) for element in row] for row in matrix]
+    return [[round(item / div, 2) for item in lists] for lists in matrix]
