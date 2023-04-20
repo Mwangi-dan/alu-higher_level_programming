@@ -1,8 +1,8 @@
-## Test-driven development
+# Test-driven development
 
 This repo contains lessons for test-driven development in python
 
-# General objectives:
+## General objectives:
 - Why Python programming is awesome
 - What’s an interactive test
 - Why tests are important
