@@ -26,4 +26,3 @@ def text_indentation(text):
             print(text[i], end="")
 
 
-text_indentation("Hello. How are you? I am fine: John")
