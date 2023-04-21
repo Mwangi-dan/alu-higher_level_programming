@@ -23,6 +23,4 @@ def text_indentation(text):
         elif text[i] == " " and text[i - 1] in [".", "?", ":"]:
             continue
         else:
-            print(text[i], end="")
-
-
+            print(text[i])
