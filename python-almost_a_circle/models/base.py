@@ -46,3 +46,14 @@ class Base:
             dummy = cls(1)
         dummy.update(**dictionary)
         return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        """loads jsonified object from file"""
+        try:
+            with open("{}.json".format(cls.__name__), "r",
+                      encoding="utf-8") as f:
+                return [cls.create(**obj) for obj in
+                        cls.from_json_string(f.read())]
+        except:
+            return []
