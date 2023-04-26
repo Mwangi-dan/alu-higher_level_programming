@@ -30,7 +30,7 @@ class TestBase(unittest.TestCase):
         '''Tests Base() instantiation.'''
         b = Base()
         self.assertEqual(str(type(b)), "<class 'models.base.Base'>")
-        self.assertEqual(b.__dict__, {"id": 1})
+        self.assertEqual(b.__dict__, {'_Base__id': 1})
         self.assertEqual(b.id, 1)
 
     def test_D_constructor(self):
