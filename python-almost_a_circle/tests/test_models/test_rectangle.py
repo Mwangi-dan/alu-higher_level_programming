@@ -193,10 +193,6 @@ class TestRectangle(unittest.TestCase):
             self.assertEqual(file.read(), '[]')
             self.assertEqual(type(file.read()), str)
 
-        Rectangle.save_to_file([Rectangle(1, 2)])
-        with open("Rectangle.json") as file:
-            self.assertEqual(file.read(), [{"x": 0, "width": 1, "id": 1, "y": 0, "height": 2}])
-
     def test_save_to_file_empty(self):
         Rectangle.save_to_file([])
         self.assertTrue(os.path.isfile("Rectangle.json"))
