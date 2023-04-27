@@ -9,6 +9,7 @@ How are you?
 Hello:
 <BLANKLINE>
 How are you?
+<BLANKLINE>
 
 >>> text_indent(34)
 Traceback (most recent call last):
