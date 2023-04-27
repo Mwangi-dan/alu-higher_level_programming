@@ -14,13 +14,14 @@ def text_indentation(text):
     """
     if type(text) is not str:
         raise TypeError("text must be a string")
-    for i in range(len(text)):
-        if text[i] in [".", "?", ":"]:
-            print(text[i], end="\n\n")
-            print()
-        elif text[i] in [".", "?", ":"] and i == len(text) - 1:
-            print(text[i], end="")
-        elif text[i] == " " and text[i - 1] in [".", "?", ":"]:
-            continue
-        else:
-            print(text[i], end="")
+
+    s = text[:]
+
+    for d in ".?:":
+        list_text = s.split(d)
+        s = ""
+        for i in list_text:
+            i = i.strip(" ")
+            s = i + d if s is "" else s + "\n\n" + i + d
+
+    print(s[:-3], end="")
