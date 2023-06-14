@@ -1,5 +1,5 @@
 #!/usr/bin/node
-if (process.argv.length > 2) {
+if (process.argv.length > 3) {
   const argList = process.argv.slice(2);
   const intList = argList.map(element => +element).sort((a, b) => a - b);
   console.log(intList[intList.length - 2]);
