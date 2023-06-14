@@ -7,5 +7,9 @@ function add (a, b) {
     return sum;
   }
 }
-const a = process.argv[2]; const b = process.argv[3];
-console.log(add(a, b));
+if (process.argv.length !== 4) {
+  console.log('NaN');
+} else {
+  const a = process.argv[2]; const b = process.argv[3];
+  console.log(add(a, b));
+}
