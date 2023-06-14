@@ -6,7 +6,7 @@ module.exports = class Rectangle(width, height) {
     this.h = height;
   }
 
-  toString {
+  toString() {
     return 'Rectangle { width: ${this.w}, height: ${this.height}'
   }
 };
