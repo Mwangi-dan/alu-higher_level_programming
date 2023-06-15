@@ -8,16 +8,16 @@ module.extends = class Square extends Square5 {
   }
 
   charPrint (c) {
-    if (c !== undefined) {
-      for (let i = 0; i < this.size; i++) {
-        let output = '';
-        for (let j = 0; j < this.size; j++) {
-          output += c;
-        }
-        console.log(output);
+    if (c === undefined) {
+      c = 'X';
+    }
+
+    for (let i = 0; i < this.width; i++) {
+      let output = '';
+      for (let j = 0; j < this.height; j++) {
+        output += c;
       }
-    } else {
-      super.print();
+      console.log(output);
     }
   }
 };
