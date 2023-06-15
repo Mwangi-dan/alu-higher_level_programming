@@ -2,7 +2,7 @@
 // Square class that inherits from square class in 5-square
 const Square5 = require('./5-square');
 
-module.extends = class Square extends Square5 {
+module.exports = class Square extends Square5 {
   constructor (size) {
     super(size, size);
   }
