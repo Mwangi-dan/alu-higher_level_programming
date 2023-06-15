@@ -14,7 +14,7 @@ request(requestURL, (error, response, body) => {
     const characters = result.characters;
     // characters is also an array
     for (const chars of characters) {
-      if (chars === requestURL[35] + 'people/18/') {
+      if (chars.endsWith('/18/')) {
         count += 1;
       }
     }
