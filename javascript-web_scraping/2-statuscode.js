@@ -3,6 +3,6 @@
 const requestURL = process.argv[2];
 
 const request = require('request');
-request(requestURL, function (response) {
-  console.log(response.statusCode);
+request.get(requestURL).on('repsonse', (response) => {
+  console.log('code: ' + response.statusCode)
 });
