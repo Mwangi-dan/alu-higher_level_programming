@@ -12,7 +12,7 @@ module.extends = class Square extends Square5 {
       for (let i = 0; i < this.size; i++) {
         let output = '';
         for (let j = 0; j < this.size; j++) {
-          output += 'C';
+          output += c;
         }
         console.log(output);
       }
