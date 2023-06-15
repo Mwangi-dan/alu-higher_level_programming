@@ -1,6 +1,5 @@
 #!/usr/bin/node
-const request = require('request');
-const charID = process.argv[2];
+const request = require('request');;
 const requestURL = 'https://swapi-api.alx-tools.com/api/films/';
 request(requestURL, (error, response, body) => {
   if (error) {
@@ -15,7 +14,7 @@ request(requestURL, (error, response, body) => {
     const characters = result.characters;
     // characters is also an array
     for (const chars of characters) {
-      if (chars === 'https://swapi-api.alx-tools.com/api/people/' + charID + '/') {
+      if (chars === 'https://swapi-api.alx-tools.com/api/people/18/') {
         count += 1;
       }
     }
