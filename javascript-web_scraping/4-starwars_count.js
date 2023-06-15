@@ -14,7 +14,7 @@ request(requestURL, (error, response, body) => {
     const characters = result.characters;
     // characters is also an array
     for (const chars of characters) {
-      if (chars === 'https://swapi-api.alx-tools.com/api/people/18/') {
+      if (chars === requestURL + '18/') {
         count += 1;
       }
     }
